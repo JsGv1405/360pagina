@@ -1,0 +1,50 @@
+@import "../../styles/utils/Colors.scss";
+
+.consultoria-container{
+    margin: 0 10% 2rem 10%;
+
+    .container {
+        display: grid;
+        .content {
+          margin-top: 3rem;
+    
+          h1 {
+            font-size: 3rem;
+            color: $headingColor;
+            text-align: center;
+          }
+    
+          p {
+            font-size: 1.4rem;
+            color: $lightFontColor;
+            line-height: 1.9rem;
+            text-align: justify;
+          }
+    
+          .button-container {
+            display: flex;
+    
+            button {
+              margin-right: 1rem;
+            }
+          }
+        }
+      }
+}
+
+@media screen and (max-width: 768px) {
+  .consultoria-container{
+    margin: 0 10% 2rem 10%;
+
+    .container {
+        .content {
+          p {
+            font-size: 2rem;
+            color: $lightFontColor;
+            line-height: 2.5rem;
+            text-align: justify;
+          }
+        }
+      }
+}
+}

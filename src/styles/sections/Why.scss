@@ -1,0 +1,625 @@
+@import "../utils/Colors.scss";
+
+.why-container {
+  margin: 0 10%;
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 3.4rem;
+
+    .top {
+      .subTitle {
+        p {
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    .content {
+      margin-top: 3.4rem;
+      margin-right: 3rem;
+
+      .reasons {
+        ul {
+          li {
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            display:inline-block;
+              width: 20%;
+
+            &::before {
+              top: 0px;
+            }
+          }
+        }
+      }
+
+      h1 {
+        font-size: 3rem;
+        color: $headingColor;
+        text-align: center;
+      }
+
+      p {
+        font-size: 1.8rem;
+        color: $lightFontColor;
+        line-height: 1.9rem;
+        text-align: justify;
+      }
+
+      .button-container {
+        display: flex;
+
+        button {
+          margin-right: 1rem;
+        }
+      }
+    }
+
+    .image {
+      img {
+        height: 35rem;
+        width: 35rem;
+        aspect-ratio: 4/3;
+      }
+    }
+
+    .outsourcing {
+      position: static;
+      padding: auto;
+      width: 80vw;
+      aspect-ratio: 4/1.8;
+      object-fit: cover;
+      background-image: url("../../assets/outsourcing.svg");
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      svg {
+        color: white;
+        font-size: 7rem;
+      }
+    }
+
+    .entregables {
+      position: relative;
+      top: 0rem;
+      left: 18rem;
+      scale: 1;
+      width: 40vw;
+      aspect-ratio: 4/1.09;
+      object-fit: cover;
+      background-image: url("../../assets/entregables.svg");
+      background-size: cover;
+      justify-content: center;
+      align-items: center;
+
+      svg {
+        color: white;
+        font-size: 7rem;
+      }
+
+    }
+
+    .entregables2 {
+      position: relative;
+      top: 0rem;
+      left: 18rem;
+      width: 40vw;
+      aspect-ratio: 4/1.4;
+      object-fit: cover;
+      background-image: url("../../assets/entregables2.svg");
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      svg {
+        color: white;
+        font-size: 7rem;
+      }
+
+    }
+
+    .cotiza {
+      position: relative;
+      top: 0rem;
+      left: 11rem;
+      width: 60vw;
+      padding-left: 2rem;
+      padding-top: 5rem;
+      aspect-ratio: 2/1.9;
+      object-fit: cover;
+      background-image: url("../../assets/cotizaahora.svg");
+      background-size: cover;
+      border-radius: 1rem;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+
+      svg {
+        color: white;
+        font-size: 7rem;
+      }
+    }
+
+    .clientes {
+      position: relative;
+      top: 0rem;
+      left: 0rem;
+      width: 80vw;
+      aspect-ratio: 11/1;
+      object-fit: cover;
+      background-image: url("../../assets/nuestrosclientes.svg");
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      svg {
+        color: white;
+        font-size: 7rem;
+      }
+    }
+
+    .clientes2 {
+      position: relative;
+      top: 0rem;
+      left: 12rem;
+      width: 50vw;
+      aspect-ratio: 5.6/1.05;
+      object-fit: cover;
+      background-image: url("../../assets/clientestitulo.svg");
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      svg {
+        color: white;
+        font-size: 7rem;
+      }
+    }
+
+    .videospot1 {
+
+      position: relative;
+      width: 100%;
+      height: auto;
+      top: 0rem;
+      left: 3rem;
+      padding-top: 5%;
+    }
+
+    .videospot2 {
+
+      position: relative;
+      width: 100%;
+      height: auto;
+      top: 0rem;
+      left: 3rem;
+      padding-top: 5%;
+    }
+
+    .videospot3 {
+
+      position: relative;
+      width: 100%;
+      height: auto;
+      top: 0rem;
+      left: 3rem;
+      padding-top: 5%;
+    }
+  }
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .why-container {
+    .container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      .top {
+        .subTitle {
+          p {
+            font-size: 1.6rem;
+            text-align: justify;
+          }
+        }
+      }
+
+      .content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-top: 1rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+
+        .reasons {
+          ul {
+            li {
+              margin-bottom: 1rem;
+              font-size: 2rem;
+              display: flex;
+ 
+              &::before {
+                top: 0px;
+              }
+            }
+          }
+        }
+
+        .entregables {
+          position: relative;
+          top: 7rem;
+          left: 0rem;
+          scale: 1;
+          width: 30vw;
+          aspect-ratio: 4/1.09;
+          object-fit: cover;
+
+        }
+
+        .entregables2 {
+          position: relative;
+          top: -2rem;
+          left: 65%;
+          width: 60vw;
+          scale: 1.2;
+          aspect-ratio: 4/1.4;
+          object-fit: cover;
+          background-image: url("../../assets/entregables3.svg");
+          background-size: cover;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          svg {
+            color: white;
+            font-size: 7rem;
+          }
+
+        }
+
+        .cotiza {
+          position: relative;
+          top: 0rem;
+          left: -7%;
+          width: 85vw;
+          padding-left: 2rem;
+          padding-top: 5rem;
+          aspect-ratio: 2/2.5;
+          object-fit: cover;
+          background-image: url("../../assets/cotizaahora2.png");
+          background-size: cover;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          svg {
+            color: white;
+            font-size: 7rem;
+          }
+        }
+
+        .clientes {
+          top: 0rem;
+          left: -4rem;
+          width: 90vw;
+        }
+    
+        .clientes2 {
+          top: 0rem;
+          left: 5%;
+          width: 70vw;
+        }
+
+        .videospot2 {
+
+          position: relative;
+          width: 85%;
+          height: auto;
+          top: 0rem;
+          left: -8%;
+          padding-top: 5%;
+        }
+
+        .videospot3 {
+
+          position: relative;
+          width: 106%;
+          height: auto;
+          top: 0rem;
+          left: -7%;
+          padding-top: 5%;
+        }
+
+
+
+
+      }
+    }
+  }
+}
+
+@media screen and(min-width: 479) and (max-width: 768px) {
+  .why-container {
+    .container {
+      display: grid;
+      grid-template-columns: 1fr;
+      margin-top: 3rem;
+      .top {
+        .subTitle {
+          p {
+            font-size: 2rem;
+          }
+        }
+      }
+
+      .content {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 1rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+
+        .reasons {
+          ul {
+            li {
+              margin-bottom: 1rem;
+              font-size: 2rem;
+              display: inline-block;
+
+              &::before {
+                top: 0px;
+              }
+            }
+          }
+        }
+
+        .entregables {
+          position: relative;
+          top: 7rem;
+          left: 0rem;
+          scale: 1;
+          width: 30vw;
+          aspect-ratio: 4/1.09;
+          object-fit: cover;
+
+        }
+
+        .entregables2 {
+          position: relative;
+          top: -2rem;
+          left: 65%;
+          width: 60vw;
+          scale: 1.2;
+          aspect-ratio: 4/1.4;
+          object-fit: cover;
+          background-image: url("../../assets/entregables3.svg");
+          background-size: cover;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          svg {
+            color: white;
+            font-size: 7rem;
+          }
+
+        }
+
+        .cotiza {
+          position: relative;
+          top: 0rem;
+          left: -4%;
+          width: 85vw;
+          padding-left: 2rem;
+          padding-top: 5rem;
+          aspect-ratio: 2/2.5;
+          object-fit: cover;
+          background-image: url("../../assets/cotizaahora2.png");
+          background-size: cover;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          svg {
+            color: white;
+            font-size: 7rem;
+          }
+        }
+
+        .clientes {
+          top: 0rem;
+          left: -7%;
+          width: 90vw;
+        }
+    
+        .clientes2 {
+          top: 0rem;
+          left: 18%;
+          width: 60vw;
+        }
+
+        .videospot1 {
+
+          position: relative;
+          width:115%;
+          height: auto;
+          top: 0rem;
+          left: -8%;
+          padding-top: 5%;
+        }
+
+        .videospot2 {
+
+          position: relative;
+          width: 100%;
+          height: auto;
+          top: 0rem;
+          left: -10%;
+          padding-top: 5%;
+        }
+
+        .videospot3 {
+
+          position: relative;
+          width: 106%;
+          height: auto;
+          top: 0rem;
+          left: -7%;
+          padding-top: 5%;
+        }
+
+
+
+
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .why-container {
+    .container {
+      margin-top: 4rem;
+      grid-template-columns: 1fr;
+      
+      .top {
+        .subTitle {
+          p {
+            font-size: 1.2rem;
+          }
+        }
+      }
+
+      .content {
+        
+        grid-template-columns: 1fr;
+        margin-top: 1rem;
+        margin-right: 0rem;
+        margin-left: 0rem;
+
+        .reasons {
+          ul {
+            
+            li {
+              margin-bottom: 1rem;
+              font-size: 1rem;
+
+              display:inline-block;
+              width: 20%;
+
+
+              &::before {
+                top: 0px;
+              }
+            }
+          }
+        }
+
+        .entregables {
+          position: relative;
+          top: 7rem;
+          left: 0rem;
+          scale: 1;
+          width: 30vw;
+          aspect-ratio: 4/1.09;
+          object-fit: cover;
+
+        }
+
+        .entregables2 {
+          position: relative;
+          top: -2rem;
+          left: 65%;
+          width: 60vw;
+          scale: 1.2;
+          aspect-ratio: 4/1.4;
+          object-fit: cover;
+          background-image: url("../../assets/entregables3.svg");
+          background-size: cover;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          svg {
+            color: white;
+            font-size: 7rem;
+          }
+
+        }
+
+        .cotiza {
+          position: relative;
+          top: 0rem;
+          left: -4%;
+          width: 85vw;
+          padding-left: 2rem;
+          padding-top: 5rem;
+          aspect-ratio: 2/2.5;
+          object-fit: cover;
+          background-image: url("../../assets/cotizaahora2.png");
+          background-size: cover;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          svg {
+            color: white;
+            font-size: 7rem;
+          }
+        }
+
+        .clientes {
+          top: 0rem;
+          left: -4rem;
+          width: 90vw;
+        }
+    
+        .clientes2 {
+          top: 0rem;
+          left: 18%;
+          width: 60vw;
+        }
+
+        .videospot1 {
+
+          position: relative;
+          width:115%;
+          height: auto;
+          top: 0rem;
+          left: -8%;
+          padding-top: 5%;
+        }
+
+        .videospot2 {
+
+          position: relative;
+          width: 100%;
+          height: auto;
+          top: 0rem;
+          left: -10%;
+          padding-top: 5%;
+        }
+
+        .videospot3 {
+
+          position: relative;
+          width: 106%;
+          height: auto;
+          top: 0rem;
+          left: -7%;
+          padding-top: 5%;
+        }
+
+
+
+
+      }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+@import "../../styles/utils/Colors.scss";
+
+.mision-container {
+  margin: 0 10%;
+
+  .container {
+    display: grid;
+    .content {
+      margin-top: 3rem;
+
+      h1 {
+        font-size: 2rem;
+        color: $headingColor;
+        text-align: center;
+      }
+
+      p {
+        font-size: 1.1rem;
+        color: $lightFontColor;
+        line-height: 1.9rem;
+        text-align: justify;
+      }
+
+      .button-container {
+        display: flex;
+
+        button {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .mision-container {
+    .container {
+
+      .content {
+        margin-top: 3rem;
+  
+        h1 {
+          font-size: 3rem;
+          color: $headingColor;
+          text-align: center;
+        }
+  
+        p {
+          font-size: 2.1rem;
+          color: $lightFontColor;
+          line-height: 2.5rem;
+          text-align: justify;
+        }
+  
+        .button-container {
+          display: flex;
+  
+          button {
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .mision-container {
+    .container {
+
+      .content {
+        margin-top: 3rem;
+  
+        h1 {
+          font-size: 3rem;
+          color: $headingColor;
+          text-align: center;
+        }
+  
+        p {
+          font-size: 2.5rem;
+          color: $lightFontColor;
+          line-height: 3.5rem;
+          text-align: justify;
+        }
+  
+        .button-container {
+          display: flex;
+  
+          button {
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  
+}

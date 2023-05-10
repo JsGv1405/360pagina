@@ -1,0 +1,141 @@
+@import "../../styles/utils/Colors.scss";
+
+.asesoria-container {
+  margin: 0 10%;
+
+  .container {
+    display: grid;
+
+    .content {
+      margin-top: 3rem;
+
+      h1 {
+        font-size: 3rem;
+        color: $headingColor;
+        text-align: center;
+      }
+
+      p {
+        font-size: 1.4rem;
+        color: $lightFontColor;
+        line-height: 1.9rem;
+        text-align: justify;
+      }
+
+      .button-container {
+        display: flex;
+
+        button {
+          margin-right: 1rem;
+        }
+      }
+
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        margin: 0 0 2rem 0;
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+
+  .asesoria-container {
+    margin: 0 10%;
+
+    .container {
+
+      .content {
+
+
+        h1 {
+          font-size: 1rem;
+          color: $headingColor;
+          text-align: center;
+        }
+
+        p {
+          font-size: 1.4rem;
+          color: $lightFontColor;
+          line-height: 1.9rem;
+          text-align: justify;
+        }
+
+        .button-container {
+          display: flex;
+
+          button {
+            margin-right: 1rem;
+          }
+        }
+
+        .cards {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          gap: 2rem;
+          margin: 0 0 2rem 0;
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .asesoria-container {
+    margin: 0 10%;
+
+    .container {
+      .content {
+        h1 {
+          font-size: 1rem;
+          color: $headingColor;
+          text-align: center;
+        }
+
+        p {
+          font-size: 1.4rem;
+          color: $lightFontColor;
+          line-height: 1.9rem;
+          text-align: justify;
+        }
+
+        .button-container {
+          display: flex;
+
+          button {
+            margin-right: 1rem;
+          }
+        }
+
+        .cards {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 2rem;
+          margin: 0 0 2rem 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .asesoria-container {
+    margin: 0 10%;
+
+    .container {
+      .content {
+        margin: 2rem 0 2rem 10%;
+        .cards {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 2rem;
+          margin: 0 0 2rem 0;
+        }
+      }
+    }
+  }
+}

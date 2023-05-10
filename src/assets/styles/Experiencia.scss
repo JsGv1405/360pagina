@@ -1,0 +1,88 @@
+@import "../../styles/utils/Colors.scss";
+
+.experiencia-container {
+    .container {
+        margin: 0 10%;
+
+        padding: 1rem 1rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .title-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .title {
+                margin-bottom: 1rem;
+            }
+
+            p {
+                color: $lightFontColor;
+            }
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            
+            
+            
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .experiencia-container {
+        .container {
+            .cards {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 2rem;
+                
+            }
+    
+        }
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .experiencia-container {
+        .container {
+            .cards {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 4rem;
+                
+            }
+    
+        }
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .experiencia-container {
+        .container {
+            margin-top: 2rem;
+            .cards {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+                
+            }
+    
+        }
+    }
+}

@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@1,600&display=swap');
+.banner2-container {
+
+    .content {
+        background-image: linear-gradient(rgba(27, 28, 31, 0.629), rgba(0, 26, 103, 0.497)), url("../../assets/images/banner.jpg");
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+        height: 50vh;
+        width: 100%;
+        justify-content: center;
+        h1 {
+            font-size: 7rem;
+            text-align: center;
+            color:rgba(255, 255, 255, 0.629),;
+            font-family: 'Asap Condensed', sans-serif; 
+        }
+        h3 {
+            font-size: 2rem;
+            text-align: center;
+            color:rgba(255, 255, 255, 0.629),;
+            font-family: 'Asap Condensed', sans-serif; 
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .banner2-container {
+
+        .content {
+            height: 30vh;
+            width: 100%;
+
+        }
+    }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .banner2-container {
+
+        .content {
+            height: 30vh;
+            width: 100%;
+
+        }
+    }
+}

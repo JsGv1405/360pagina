@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@1,600&display=swap');
+.banner-container {
+    margin: 0 10%;
+
+    .content {
+        background-image: linear-gradient(rgba(12, 45, 143, 0.396), rgba(12, 45, 143, 0.396)), url("../images/bannerNosotros.jpg");
+        background-size: cover;
+        background-position: center center;
+        position: relative;
+        height: 60vh;
+        width: 100%;
+
+        h1 {
+            font-size: 7rem;
+            text-align: center;
+            color:rgba(255, 255, 255, 0.629),;
+            font-family: 'Asap Condensed', sans-serif; 
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .banner-container {
+
+        .content {
+            height: 40vh;
+            width: 100%;
+
+            h1 {
+                font-size: 10rem;
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .banner-container {
+
+        .content {
+            height: 40vh;
+            width: 100%;
+            h1 {
+                font-size: 10rem;
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .banner-container {
+
+        .content {
+            height: 50vh;
+            width: 100%;
+            h1 {
+                font-size: 7rem;
+            }
+
+        }
+    }
+}
+

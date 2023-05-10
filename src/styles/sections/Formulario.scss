@@ -1,0 +1,131 @@
+@import "../utils/Colors.scss";
+@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@1,600&display=swap');
+
+.formulario-content {
+    margin: 0 10% 5% 10%;
+
+    .container {
+        background-color: $headingColor;
+        border-radius: 2rem;
+
+        .content {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            top: 0;
+            left: 0;
+
+            h3 {
+                color: white;
+                font-family: 'Asap Condensed', sans-serif;
+                line-height: 1.3rem;
+                font-size: x-large;
+                text-align: justify;
+            }
+            h2 {
+                color: white;
+                font-family: 'Asap Condensed', sans-serif;
+                line-height: 1.3rem;
+                text-align: justify;
+            }
+
+            .informacion {
+                margin: 35% 4rem 2rem 2rem;
+
+
+                p {
+                    color: white;
+                    line-height: 1.3rem;
+                    text-align: justify;
+                }
+            }
+
+            .formulario {
+                margin: 2rem 4rem 2rem -2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .formulario-content {
+    
+        .container {
+    
+            .content {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                top: 0;
+                left: 0;
+    
+                h3 {
+                    line-height: 3rem;
+                    font-size: x-large;
+                    text-align: center;
+                }
+                h2 {
+                    line-height: 1.3rem;
+                    text-align: center;
+                }
+    
+                .informacion {
+                    margin: 4rem 2rem 2rem 2rem;
+    
+    
+                    p {
+                        color: white;
+                        font-size: small;
+                        line-height: 2.3rem;
+                        text-align: center;
+                    }
+                }
+    
+                .formulario {
+                    margin: 0rem 4rem 2rem 2rem;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    .formulario-content {
+    
+        .container {
+    
+            .content {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                top: 0;
+                left: 0;
+    
+                h3 {
+                    line-height: 3rem;
+                    font-size: x-large;
+                    text-align: center;
+                }
+                h2 {
+                    line-height: 1.3rem;
+                    text-align: center;
+                }
+    
+                .informacion {
+                    margin: 4rem 2rem 2rem 2rem;
+    
+    
+                    p {
+                        color: white;
+                        font-size: small;
+                        line-height: 2.3rem;
+                        text-align: center;
+                    }
+                }
+    
+                .formulario {
+                    margin: 0rem 4rem 2rem 2rem;
+                }
+            }
+        }
+    }
+
+}

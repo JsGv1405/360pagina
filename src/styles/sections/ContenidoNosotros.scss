@@ -1,0 +1,89 @@
+@import "../utils/Colors.scss";
+.nosotros-container {
+
+  margin: 0 10%;
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    .details {
+      p {
+        color: $lightFontColor;
+        line-height: 1.3rem;
+        font-size: large;
+        text-align: justify;
+        width: 90%;
+      }
+      button {
+        margin-top: 3rem;
+      }
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+      
+    }
+    .image{
+      margin-top: 0rem;
+        width: 40vw;
+    }
+   
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .nosotros-container {
+    .container {
+      grid-template-columns: 1fr;
+      margin-top: 5rem;
+      .details {
+        p {
+          font-size: 2.3rem;
+          line-height: 3rem;
+          width: 100%;
+        }
+      }
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .image {
+        width: 100%;
+      }
+    }
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .nosotros-container {
+    .container {
+      grid-template-columns: 1fr;
+      margin-top: 2rem;
+      .details {
+        p {
+          font-size: 2.3rem;
+          line-height: 3rem;
+          width: 100%;
+        }
+      }
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .image {
+        width: 100%;
+      }
+    }
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .nosotros-container {
+    .container {
+      gap: 1rem;
+      .cards {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+    }
+  }
+}
